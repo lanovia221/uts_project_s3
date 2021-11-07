@@ -10,7 +10,7 @@
         <p>Salary: {{ $youtube['salary'] }} </p>
         <p>Description: {{ $youtube['description'] }}</p>
 
-        <table class="table table-bordered bg-secondary">
+        <table class="table table-bordered border-primary table-hover">
             <tr>
                 <td>No</td>
                 <td>Nama</td>

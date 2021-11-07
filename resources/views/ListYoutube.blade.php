@@ -6,7 +6,7 @@
     <div class="mt-1 p-3">
             <br>
             <br>
-            <table class="table table-striped">
+            <table class="table table-striped border border-2 border-secondary">
                 
                     <tr>
                         <td>No</td>
@@ -46,6 +46,6 @@
 
             <br>
             <br>
-            <a href="{{route("ListYoutube.create")}}" class="btn btn-outline-success d-flex p-3 bd-highlight mx-auto text-uppercase justify-content-center">Add New List</a>
+            <a href="{{route("ListYoutube.create")}}" class="btn btn-outline-success d-flex p-3 bd-highlight mx-auto text-uppercase justify-content-center ">Add New List</a>
         </div>
     @endsection

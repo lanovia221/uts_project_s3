@@ -6,14 +6,14 @@
 <div class="mt-1 p-3">
     <br>
     <br>
-    <table class="table table-striped">
+    <table class="table table-striped border border-2 border-secondary">
         <tr>
             <td>No</td>
             <td>Nama</td>
             <td>Jenis</td>
             <td>Durasi</td>
             <td>Youtuber</td>
-            <td colspan="2" align="center">Action</td>
+            <td colspan="3" align="center">Action</td>
 
             @foreach ($content as $c)
                 <tr>
@@ -34,12 +34,15 @@
                             <button type="submit" class="btn btn-outline-danger text-uppercase justify-content-center">Delete</button>
                         </form>
                     </td>
+                    <td>
+                        <a href="{{route("ShowContent.create")}}" class="btn btn-outline-success  mx-auto text-uppercase justify-content-center">Add</a>
+                    </td>
                 </tr>
 
             @endforeach
     </table>
     <br>
     <br>
-            <a href="{{route("ShowContent.create")}}" class="btn btn-outline-success d-flex p-3 bd-highlight mx-auto text-uppercase justify-content-center">Add New List</a>
+            {{-- <a href="{{route("ShowContent.create")}}" class="btn btn-outline-success d-flex p-3 bd-highlight mx-auto text-uppercase justify-content-center">Add New List</a> --}}
 </div>
 @endsection

@@ -4,7 +4,7 @@
 
 @section('main_content')
 
-    <div class="container mt-4 p-5 border border-2 border-info rounded " >
+    <div class="container mt-4 p-5 rounded " >
         <div class="row">
             <div class="col-sm ">
                 <br>
