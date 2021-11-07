@@ -24,18 +24,18 @@
                     <td>{{ $c->youtubers->name }}</td>
                     <td>
                         <a href="{{route("ShowContent.edit", $c['id'])}}">
-                            <button type="submit" class="btn btn-outline-primary text-uppercase justify-content-center">Edit</button>
+                            <button type="submit" class="btn btn-outline-primary d-flex p-2 text-uppercase justify-content-center">Edit</button>
                         </a>
                     </td>
                     <td>
                         <form action="{{route("ShowContent.destroy", $c['id'])}}" method="POST">
                          @csrf
                          @method('Delete')
-                            <button type="submit" class="btn btn-outline-danger text-uppercase justify-content-center">Delete</button>
+                            <button type="submit" class="btn btn-outline-danger d-flex p-2 text-uppercase justify-content-center">Delete</button>
                         </form>
                     </td>
                     <td>
-                        <a href="{{route("ShowContent.create")}}" class="btn btn-outline-success  mx-auto text-uppercase justify-content-center">Add</a>
+                        <a href="{{route("ShowContent.create")}}" class="btn btn-outline-success  d-flex p-2 mx-auto text-uppercase justify-content-center">Add</a>
                     </td>
                 </tr>
 
